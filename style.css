@@ -2,5 +2,15 @@ body{
     background-color: black;
     color: #fff;
     min-height: 100vh;
-    display: flex;justify-content: center;align-items: center;text-align-center;
+    display: flex;justify-content: center;align-items: center;text-align: center;
+}
+header h1{
+    animation: myfirst 5s linear 1s infinite alternate;
+}
+@keyframes myfirst {
+   from{
+    transform: scale(1);
+   } to{
+transform: scale(1.2);
+    }
 }
