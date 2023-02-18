@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
 </head>
@@ -54,11 +56,11 @@
                     <div class="nav_items_wrapper d-flex align-items-center">
                         <div class="nav_item">
                             <div class="sytem_image_wrapper d-flex align-items-center">
-                                <img class="header_icon search" src="./images/search.png" alt="">
+                                <i class="uil uil-search header_icon"></i>
                             </div></div>
                         <div class="nav_item">
                             <div class="sytem_image_wrapper text-white d-flex align-items-center">
-                                <img class="header_icon" src="./images/computer.png" alt="">
+                                <i class="uil uil-airplay header_icon"></i>
                                 system
                             </div>
                         </div>
@@ -68,12 +70,12 @@
                             </div></div>
                         <div class="nav_item">
                             <div class="sytem_image_wrapper">
-                                <img class="header_icon" src="./images/email.png" alt="">
+                                <i class="uil uil-envelope header_icon"></i>
                             </div>
                         </div>
                         <div class="nav_item">
                             <div class="sytem_image_wrapper">
-                                <img class="header_icon" src="./images/bell.png" alt="">
+                                <i class="uil uil-bell header_icon"></i>
                             </div>
                         </div>
                        
@@ -94,8 +96,8 @@
         <div class="sub_header_content_wrapper d-flex align-items-center">
             <div class="left_sub_header">
                 <div class="left_sub_header_inner d-flex align-items-center">
-<div class="menu_icon_wrapper">
-    <img src="./images/hamburger .png" alt="" class="sub_header_icon header_icon">
+<div class="menu_icon_wrapper pointer" id="dashboard-cta">
+ <i class="uil uil-bars sub_header_icon px-1 fz-24"></i>
 </div>
 <div class="sub_menu_nav_bar_wrapper">
     <div class="submmenu_nav_inner">
@@ -120,7 +122,6 @@
         <option value="Vimeo">Vimeo</option>
         <option value="Logout">Logout</option>
     </select>
-    
 </div>
                 </div>
             </div>
@@ -128,6 +129,92 @@
     </div>
 </div>
     </header>
-
+<!--============ inner Body Content ============ -->
+<div class="main_content_wrapper pos-rel">
+    <div class="content_inner_wrapper inner_container">
+        <div class="dashboard_wrapper">
+            <div class="sidebar_wrapper">
+                <div class="sidebar_inner_container">
+                    <div class="sidebar_items_wrapper">
+                        <ul class="sidebar_items_main py-1">
+                            <li class="sidebar_item d-in-flex align-items-center pointer active">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-estate fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Dashboard</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-processor fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">App</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-cube fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Components</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-bolt-alt fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Elements</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-bullseye fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Fonts Icons</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-airplay fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Widgets</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-web-grid-alt fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Tables</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-layer-group fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Data Tables</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-clipboard fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Forms</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-users-alt fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Users</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-file fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Pages</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-lock-alt fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Authenticsation</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-expand-arrows fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Drag And Drop</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-chart-pie fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Charts</h3></div>
+                            </li>
+                            <li class="sidebar_item d-in-flex align-items-center pointer">
+                                <div class="side_bar_icon_wrapper"><i class="uil uil-book-alt fz-24"></i></div>
+                                <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Documentation</h3></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#dashboard-cta').click(function(){
+        $(this).find('i.uil-bars').toggleClass('uil-times');
+        $('.sub_menu_nav_bar_wrapper , .sidebar_wrapper').fadeToggle();
+    });
+$('.sidebar_items_main .sidebar_item').each(function(){
+$(this).click(function(){
+    $('.sidebar_item').not(this).removeClass('active');
+    $(this).toggleClass('active');
+});
+});
+</script>
 </body>
 </html>
