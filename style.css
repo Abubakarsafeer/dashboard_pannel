@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: black;
     color: #fff;
     min-height: 100vh;
@@ -13,4 +13,102 @@ header h1{
    } to{
 transform: scale(1.2);
     }
+} */
+*{
+    margin: 0;padding: 0;
 }
+
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.pos-rel{
+    position: relative;
+}
+.pointer{
+    cursor: pointer;
+}
+.text-center{
+    text-align: center;
+}
+header.main_header{
+    background: #0e1726;
+    padding-block: .5rem;
+}
+.header_right_wrapper{
+    margin-left: auto;
+}
+.inner_container {
+    max-width: 1920px;
+    width: 97%;
+    margin: 0 auto;}
+header .logo_image , .header_icon{
+    max-width: 30px;
+    padding-right: .5rem;
+}
+.logo_wrapper .site_title_wrapper{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e0e6ed!important;
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo_wrapper{
+    justify-content: flex-start;
+    padding-right: clamp(10px,3vw,45px);
+}
+/* searchbar styling ======= */
+.search-box{
+    display: inline-flex;
+    border-radius: 6px;
+    align-items: center;
+    background: rgba(81,83,101,.28);
+  
+  }
+  .search-input{
+    width: 300px;
+    max-width: 30rem;
+    border: none;
+    border-radius: 0px 6px 6px 0;
+    font-size: 14px;
+    color: #fff;
+    background: none;
+    height: 36px;
+  }
+  .search-box svg{
+  border-radius: 6px 0 0 6px;
+  padding: .3rem .5rem;
+  border: none;
+  color:#888ea8;
+  font-size: 14px;
+  }
+  .searchbar_wrapper.popup_search{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    z-index: 9;
+    min-height: 60px;
+
+  }
+
+@media screen and (max-width:800px) {
+    header form.search-box.header , .site_title_wrapper{
+        display: none;
+      }
+      header .logo_image , .header_icon{
+        max-width: 20px;
+        padding-right: 1rem;
+    }
+}
+@media screen and (min-width:801px) {
+    .search-input-small , .header_icon.search{
+ display: none;
+    }
+   
+ }
