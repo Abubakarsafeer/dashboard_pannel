@@ -201,7 +201,7 @@ li.sidebar_item.active , li.sidebar_item:hover {
     left: 0;
     top: 115px;
     max-height: 100vh;
-    overflow-y: auto;
+    overflow-y: overlay;
     z-index: -1;
 }
 /* ===========content styling chts================== */
@@ -210,12 +210,16 @@ li.sidebar_item.active , li.sidebar_item:hover {
 }
 .main_content_wrapper_charts{
     background-color: #e0e6ed;
+    width: 100%;
 }
 .left_chart_wrapper{
     width: 70%;
 }
 .right_chart_wrapper{
     width: 30%;
+}
+.row2_chart_inner .chart_wrapper{
+width: 33%;
 }
 .chart_img{
     width: 100%;
@@ -226,7 +230,8 @@ li.sidebar_item.active , li.sidebar_item:hover {
         display: none;
       }
       .sidebar_inner_container {
-        z-index: 999;
+        position: fixed;
+        z-index: 9;
         top: 0;
       }
       .main_content_wrapper{
