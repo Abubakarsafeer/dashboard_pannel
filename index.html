@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>  
     <title>Dashboard</title>
 </head>
 <body>
@@ -212,10 +216,10 @@
             <div class="revenue_box-wrapper">
                 <div class="revenue_chart-inner d-flex">
                     <div class="left_chart_wrapper chart_wrapper">
-                        <img class="chart_img" src="./images/toprow1.1.png" alt="">
+                        <div class="bg_white chartdiv1" id="chartdiv1_1"></div>
                     </div>
                     <div class="right_chart_wrapper chart_wrapper">
-                        <img class="chart_img" src="./images/row1.2.png" alt="">
+                        <div class="bg_white chartdiv1" id="chartdiv1_2"></div>
                     </div>
                 </div>
             </div>
@@ -224,14 +228,12 @@
             <div class="revenue_box-wrapper">
                 <div class="row2_chart_inner d-flex">
                     <div class="left_chart_wrapper chart_wrapper">
-                        <img class="chart_img" src="./images/row2.1.png" alt="">
-                    </div>
+                        <div class="bg_white chartdiv2" id="chartdiv2_1"></div>
+                                            </div>
                     <div class="medium_chart_wrapper chart_wrapper">
-                        <img class="chart_img" src="./images/row2.2.png" alt="">
-                    </div>
+                        <div class="bg_white chartdiv2" id="chartdiv2_2"></div>                        </div>
                     <div class="right_chart_wrapper chart_wrapper">
-                        <img class="chart_img" src="./images/row2.3.png" alt="">
-                    </div>
+                        <div class="bg_white chartdiv2" id="chartdiv2_3"></div>                        </div>
                 </div>
             </div>
         </div>
@@ -252,5 +254,6 @@ $(this).click(function(){
 });
 });
 </script>
+<script src="./charts.js"></script>
 </body>
 </html>
