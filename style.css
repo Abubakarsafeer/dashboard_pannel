@@ -241,7 +241,17 @@ width: 33%;
         top: 0;
       }
 }
+@media screen and (max-width:600px) {
+    .chart_wrapper{
+        width: 100% !important;
+    }
+    .d-flex{
+    flex-wrap: wrap;
+
+    }
+}
 @media screen and (min-width:801px) {
+
     .search-input-small , .header_icon.search{
  display: none;
     }

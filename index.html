@@ -244,8 +244,8 @@
 </div>
 <script>
     $('#dashboard-cta').click(function(){
-        $(this).find('i.uil-bars').toggleClass('uil-times');
-        $('.sub_menu_nav_bar_wrapper , .sidebar_inner_container').fadeToggle();
+        $(this).find('i.uil-bars').toggleClass('uil-times',5000);
+        $('.sub_menu_nav_bar_wrapper , .sidebar_inner_container').fadeToggle(1000);
     });
 $('.sidebar_items_main .sidebar_item').each(function(){
 $(this).click(function(){
