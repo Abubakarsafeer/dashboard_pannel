@@ -190,7 +190,7 @@ header .main_header_inner_container{
 }
 /* ====================sidebar============== */
 .main_content_wrapper{
-    margin-top: 100px;
+    margin-top: 55px;
 }
 .side_bar_icon{
     max-width: 20px;
@@ -234,6 +234,7 @@ padding-right: .5rem;
     /* position: fixed; */
     left: 0;
     top: 115px;
+    min-height: 100vh;
     overflow-y: overlay;
     z-index: -1;
 }
@@ -242,6 +243,7 @@ padding-right: .5rem;
     padding: .7rem;
 }
 .main_content_wrapper_charts{
+    margin-top: 3rem;
     background-color: #f1f2f3;
     width: 100%;
 }
@@ -258,6 +260,11 @@ width: 33%;
     width: 100%;
     border-radius: 5px;
 }
+.side_menu_close{
+    text-align: right;
+    padding: 1rem;
+    cursor: pointer;
+}
 @media screen and (max-width:800px) {
     .header_topbar_wrapper form.search-box.header , .site_title_wrapper , .sidebar_inner_container{
         display: none;
@@ -266,6 +273,8 @@ width: 33%;
         position: fixed;
         z-index: 9;
         top: 0;
+        height: 100vh;
+    overflow: scroll;
       }
       .main_content_wrapper{
         top: 0;

@@ -148,6 +148,7 @@
                 <div class="sidebar_inner_container">
                     <div class="sidebar_items_wrapper">
                         <ul class="sidebar_items_main py-1">
+                                <div class="side_menu_close pe-1 arrow-icon"> <i class="uil uil-times  sidearrow_icon fz-16"></i></div>
                             <li class="sidebar_item d-in-flex align-items-center pointer active">
                                 <div class="side_bar_icon_wrapper"><i class="uil uil-estate fz-22 "></i></div>
                                 <div class="sidebar_item_title_wrapper px-1"><h3 class="sidebar_item_title heading-list">Dashboard</h3></div>
@@ -278,8 +279,12 @@
     </div>
 </div>
 <script>
-    $('#dashboard-cta').click(function(){
+    $('#dashboard-cta ').click(function(){
         $(this).find('i.uil-bars').toggleClass('uil-times',5000);
+        $('.sub_menu_nav_bar_wrapper , .sidebar_inner_container').fadeToggle(1000);
+    });
+    $('.side_menu_close').click(function(){
+        $('#dashboard-cta').find('i').addClass('uil-bars',5000).removeClass('uil-times' , 5000);
         $('.sub_menu_nav_bar_wrapper , .sidebar_inner_container').fadeToggle(1000);
     });
 $('.sidebar_items_main .sidebar_item').each(function(){
